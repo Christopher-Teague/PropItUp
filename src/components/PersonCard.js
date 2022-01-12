@@ -15,14 +15,13 @@ class PersonCard extends Component {
     // { this.setState.age+=1};
     
     render() {
-        console.log(this.props.age)
         const { firstName, lastName, age, hairColor } = this.props;
         return(
             <div>
                 <h1>{lastName}, {firstName}</h1>
                 <p>Age: {this.state.age}</p>
                 <p>Hair Color: {hairColor}</p>
-                <button onClick={this.LevelUp}>Level Up</button>
+                <button onClick={this.LevelUp}>Level Up for {firstName} {lastName}</button>
             </div>
         );
     }
